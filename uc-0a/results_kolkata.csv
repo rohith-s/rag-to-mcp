@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Matched ""heritage lamp post"" for Heritage Damage.",
+KM-202402,Heritage Damage,Standard,"Matched ""historic tram"" for Heritage Damage.",
+KM-202405,Noise,Standard,"Matched ""wedding band"" for Noise.",
+KM-202409,Pothole,Standard,"Matched ""pothole"" for Pothole.",
+KM-202410,Pothole,Standard,"Matched ""pothole"" for Pothole.",
+KM-202411,Pothole,Standard,"Matched ""deep pothole"" for Pothole.",
+KM-202415,Other,Standard,"No allowed category matched ""New residential complex draining directly onto public road."" confidently.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Matched ""waste"" for Waste.",
+KM-202421,Road Damage,Urgent,"Matched ""footpath broken"" for Road Damage; severity term ""hospital"" makes priority Urgent.",
+KM-202422,Road Damage,Standard,"Matched ""road surface buckled"" for Road Damage.",
+KM-202426,Heritage Damage,Standard,"Matched ""defaced"" for Heritage Damage.",
+KM-202430,Road Damage,Standard,"Matched ""road subsided"" for Road Damage.",
+KM-202434,Heritage Damage,Standard,"Matched ""heritage stone"" for Heritage Damage.",
+KM-202436,Streetlight,Standard,"Matched ""darkness"" for Streetlight.",
+KM-202438,Noise,Standard,"Matched ""amplifiers"" for Noise.",

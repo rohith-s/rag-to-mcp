@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Matched ""melting"" for Heat Hazard.",
+AM-202402,Heat Hazard,Standard,"Matched ""dangerous temperatures"" for Heat Hazard.",
+AM-202405,Other,Standard,"No allowed category matched ""Dead trees with split branches. Fall risk to walkers. 3 trees affected."" confidently.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Matched ""heatwave"" for Heat Hazard.",
+AM-202407,Road Damage,Urgent,"Matched ""upturned paving"" for Road Damage; severity term ""child"" makes priority Urgent.",
+AM-202410,Pothole,Standard,"Matched ""pothole"" for Pothole.",
+AM-202414,Streetlight,Standard,"Matched ""unlit"" for Streetlight.",
+AM-202417,Waste,Standard,"Matched ""waste"" for Waste.",
+AM-202421,Noise,Standard,"Matched ""music"" for Noise.",
+AM-202424,Heat Hazard,Standard,"Matched ""bubbling"" for Heat Hazard.",
+AM-202429,Heat Hazard,Standard,"Matched ""temperature"" for Heat Hazard.",
+AM-202431,Heritage Damage,Standard,"Matched ""ancient step well"" for Heritage Damage.",
+AM-202435,Heat Hazard,Standard,"Matched ""burns"" for Heat Hazard.",
+AM-202444,Waste,Standard,"Matched ""waste"" for Waste.",
+AM-202445,Heat Hazard,Standard,"Matched ""full sun"" for Heat Hazard.",
