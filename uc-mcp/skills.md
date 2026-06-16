@@ -1,24 +1,32 @@
-# skills.md — UC-MCP MCP Server
-# INSTRUCTIONS:
-# 1. Open your AI tool
-# 2. Paste the full contents of uc-mcp/README.md
-# 3. Use this prompt:
-#    "Read this UC README. Generate a skills.md YAML defining the two
-#     skills: query_policy_documents and serve_mcp. Each skill needs:
-#     name, description, input, output, error_handling.
-#     error_handling must address the failure mode in the README.
-#     Output only valid YAML."
-# 4. Paste the output below, replacing this placeholder
+# skills.md - UC-MCP MCP Server
 
 skills:
   - name: query_policy_documents
-    description: "[FILL IN]"
-    input: "[FILL IN: question string]"
-    output: "[FILL IN: MCP content format — content array + isError]"
-    error_handling: "[FILL IN: what happens when RAG refuses or raises exception]"
+    description: >
+      Execute the query_policy_documents MCP tool for questions about the CMC
+      HR Leave Policy, IT Acceptable Use Policy, and Finance Reimbursement
+      Policy only.
+    input: >
+      A non-empty question string supplied through tools/call arguments.
+    output: >
+      MCP result object with content as a non-empty text array and isError
+      set to false for grounded answers or true for refusals and failures.
+    error_handling: >
+      If the question is empty, out of scope, refused by RAG, or raises an
+      exception, return explanatory text with isError: true. Do not return an
+      empty content array.
 
   - name: serve_mcp
-    description: "[FILL IN]"
-    input: "[FILL IN: HTTP POST with JSON-RPC body]"
-    output: "[FILL IN: JSON-RPC 2.0 response, always HTTP 200]"
-    error_handling: "[FILL IN: unknown method → -32601, malformed request → -32700]"
+    description: >
+      Start a plain HTTP JSON-RPC server that supports tools/list and
+      tools/call for the query_policy_documents tool.
+    input: >
+      HTTP POST request with a JSON-RPC 2.0 body. The port is configurable
+      and defaults to 8765.
+    output: >
+      JSON-RPC 2.0 response returned over HTTP 200 for valid JSON-RPC
+      handling, including method errors.
+    error_handling: >
+      Unknown methods return JSON-RPC error -32601, malformed JSON returns
+      -32700, invalid requests return -32600, invalid params return -32602,
+      and unknown tools return -32601.
